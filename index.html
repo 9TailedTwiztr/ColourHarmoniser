@@ -21,11 +21,11 @@
             </section>
             <br>           
             <div id ="sliders"style="text-align: center">
-                <div>Red:</div>
+                <div id="redText">Red:</div>
                 <input id="red" class="red" type="range" min="0" max="255" value="100" onmousemove="func_1(this.value)" /><br />
-                <div>Green:</div>
+                <div id="greenText">Green:</div>
                 <input id="green" class="green" type="range" min="0" max="255" value="100" onmousemove="func_2(this.value)" /><br />
-                <div>Blue:</div>
+                <div id="blueText"> Blue:</div>
                 <input id="blue" class="blue" type="range" min="0" max="255" value="100" onmousemove="func_3(this.value)" /><br />
                 <span id="output">0, 0, 0</span>
             </div>
@@ -42,7 +42,7 @@
             </div>
             <div class="timer">
                 <h2>Time Left</h2>
-                <H2 id="timer">00:60</H2>
+                <H2 id="timer">00:00</H2>
             </div>
             <div class="buttonContainer">
                 <button style="visibility: hidden;" class ="button" id ="reset" onclick="resetGame()">Reset</button> 

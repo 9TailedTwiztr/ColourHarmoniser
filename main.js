@@ -70,9 +70,17 @@ function checkColourMatch() {
 
     // Check if all color components are within the tolerance
     const match = redDiff <= tolerance && greenDiff <= tolerance && blueDiff <= tolerance;
-
+    if (redDiff <= tolerance) {
+        document.getElementById("redText").style.color = "red";
+    }else {document.getElementById("redText").style.color = "black";}
+    if (greenDiff <= tolerance) {
+        document.getElementById("greenText").style.color = "limegreen";
+    }else {document.getElementById("greenText").style.color = "black";}
+    if (blueDiff <= tolerance) {
+        document.getElementById("blueText").style.color = "cyan";
+    }else {document.getElementById("blueText").style.color = "black";}
     if (match) {
-        console.log("Colours match!");
+        console.log("Colours match!");  
         random_colour();
         score = score + 1;
         document.getElementById("score").innerHTML = score;
