@@ -86,7 +86,7 @@ function checkColourMatch() {
 
 
 function timer (){
-var timeleft = 30;
+var timeleft = 59;
 
  
 var downloadTimer = setInterval(function(){
