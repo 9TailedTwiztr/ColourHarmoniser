@@ -1,0 +1,41 @@
+.colour-container, .colourText-container{
+    display: flex;
+  }
+
+.targetColour-display {
+    flex: 0 0 50%;
+    width: 50%;
+    height: 100px;
+    border: 2px solid #000;
+}
+.targetColour-text {
+    flex: 0 0 50%;
+    text-align: center;
+}
+.currentColour-text {
+    flex: 1;
+    text-align: center;
+}
+
+.currentColour-display  {
+    flex: 1;
+    height: 100px;
+    background-color: white;
+    border: 2px solid #000;
+}
+
+.red, .green, .blue {
+    margin-left: 10%;
+    width: 80%;
+}
+.buttonContainer {
+    width: 100%;  
+    height: 100px;   
+    display: flex;  
+    justify-content: center;  
+    align-items: center;  
+}
+.button{
+    height: 75%;
+    width: 50%;
+}

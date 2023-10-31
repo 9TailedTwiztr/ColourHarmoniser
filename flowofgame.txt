@@ -1,0 +1,25 @@
+    User Interface: The game's interface consists of a few primary elements:
+        A color square with adjustable RGB sliders.
+        A target color square.
+        RGB value displays for both the color square and the target color.
+        A score counter.
+        A timer.
+
+    Game Rules:
+        The target color square displays a random RGB color at the start.
+        The player can use three sliders (one for each RGB component) to adjust the color of the color square.
+        The player's goal is to match the color square's color to the target color as closely as possible.
+        A score is awarded based on how well the colors match. A perfect match earns the highest score.
+        The player has a limited amount of time to make adjustments.
+
+    Scoring:
+        The closer the color square matches the target color, the higher the score.
+        Scoring can be based on the difference between the RGB values of the color square and the target color.
+
+    Time Limit:
+        The player has a set time limit (e.g., 60 seconds) to complete as many color harmonizations as possible.
+        The timer counts down, and the game ends when the time runs out.
+
+    Winning:
+        The player's performance is evaluated based on the total score achieved within the time limit.
+        After the game ends, the player can see their final score and share it on social media if desired.

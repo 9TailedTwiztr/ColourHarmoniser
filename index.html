@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colour Harmoniser Game</title>
+    <link rel="stylesheet" href="styles.css"> <!-- You can link your CSS file here -->
+</head>
+<body>
+    <div class="game-container">
+        
+        <div class="colour-boxes">
+            <section class="colourText-container">
+                <div id="targetColour-text" class="targetColour-text"><h2>Target colour</h2></div>
+                <div id="currentColour-text" class="currentColour-text"><h2>Current colour</h2></div>
+            </section>
+
+            <section class="colour-container">
+                <div id="targetColourDisplay" class="targetColour-display"></div>
+                <div id="currentColourDisplay" class="currentColour-display"></div>
+            </section>
+            <br>           
+            <div id ="sliders"style="text-align: center">
+                <div>Red:</div>
+                <input id="red" class="red" type="range" min="0" max="255" value="100" onmousemove="func_1(this.value)" /><br />
+                <div>Green:</div>
+                <input id="green" class="green" type="range" min="0" max="255" value="100" onmousemove="func_2(this.value)" /><br />
+                <div>Blue:</div>
+                <input id="blue" class="blue" type="range" min="0" max="255" value="100" onmousemove="func_3(this.value)" /><br />
+                <span id="output">0, 0, 0</span>
+            </div>
+         
+        </div>
+        <div class="buttonContainer">
+            <button style="visibility: visible;" class ="button" id="start" onclick="startGame()">Start</button> 
+        </div>
+
+        <div class="score-timer">
+            <div class="score">
+                <h2>Score</h2>
+                <h2 id="score">0</h2>
+            </div>
+            <div class="timer">
+                <h2>Time Left</h2>
+                <H2 id="timer"></H2>
+            </div>
+            <div class="buttonContainer">
+                <button style="visibility: hidden;" class ="button" id ="reset" onclick="resetGame()">Reset</button> 
+            </div>
+        </div>
+    </div>
+    <script src="scripts/jquery-3.7.1.js"></script>
+    <script src="main.js"></script> 
+</body>
+</html>
